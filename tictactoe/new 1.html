@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Tic Tac Toe</title>
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <style>
+ table {
+ margin:auto;
+  border-collapse: collapse;
+  }
+
+  td {
+  width:100px;
+  text-align : center;
+  font-size : 400%;
+  }
+  tr {
+  height:100px;
+  }
+  
+  #topLeft, #topMid, #midLeft, #midMid {
+  border-right: 3px solid black;
+  border-bottom: 3px solid black;
+  }
+  #topRight, #midRight {
+   border-bottom: 3px solid black;
+  }
+  #botLeft, #botMid {
+  border-right: 3px solid black;
+  }
+  
+ </style>
+ </head>
+ <body>
+ <h1 style="text-align:center;">Tic Tac Toe </h1>
+ 
+ <table  >
+ <tr> <td id="topLeft" onclick= "AddToTopLeft();"></td>
+ <td id="topMid" onclick= "AddToTopMid();"></td>
+ <td id="topRight" onclick= "AddToTopRight();"></td> </tr>
+ 
+ <tr> <td id="midLeft" onclick= "AddTomidLeft();"></td>
+ <td id="midMid" onclick= "AddTomidMid();"></td> 
+ <td id="midRight" onclick= "AddTomidRight();"></td> </tr>
+ 
+ <tr> <td id="botLeft" onclick= "AddTobotLeft();"></td> 
+ <td id="botMid" onclick= "AddTobotMid();"></td> 
+ <td id="botRight" onclick= "AddTobotRight();"></td> </tr>
+    
+ 
+ </table>
+ 
+ <script>
+ var XO = "O"
+ function AddToTopLeft()
+ {
+  var theCell = document.getElementById("topLeft");
+  
+  theCell.innerHTML = XO;
+  
+  if (XO == "O") {
+  XO = "X";
+  }
+  else {
+	XO = "O";
+  }
+ }
+ function AddToTopMid()
+ 
+ {
+  var theCell = document.getElementById("topMid");
+  
+  theCell.innerHTML = XO;
+  
+  if (XO == "O") {
+  XO = "X";
+  }
+  else {
+	XO = "O";
+  }
+ }
+ function AddToTopRight()
+ 
+ {
+  var theCell = document.getElementById("topRight");
+  
+  theCell.innerHTML = XO;
+  
+  if (XO == "O") {
+  XO = "X";
+  }
+  else {
+	XO = "O";
+  }
+ }
+ function AddTomidLeft()
+ 
+ {
+  var theCell = document.getElementById("midLeft");
+  
+  theCell.innerHTML = XO;
+  
+  if (XO == "O") {
+  XO = "X";
+  }
+  else {
+	XO = "O";
+  }
+ }
+ function AddTomidMid()
+ 
+ {
+  var theCell = document.getElementById("midMid");
+  
+  theCell.innerHTML = XO;
+  
+  if (XO == "O") {
+  XO = "X";
+  }
+  else {
+	XO = "O";
+  }
+ }
+ function AddToMidLeft()
+ 
+ {
+  var theCell = document.getElementById("midRight");
+  
+  theCell.innerHTML = XO;
+  
+  if (XO == "O") {
+  XO = "X";
+  }
+  else {
+	XO = "O";
+  }
+ }
+ function AddTobotLeft()
+ 
+ {
+  var theCell = document.getElementById("botLeft");
+  
+  theCell.innerHTML = XO;
+  
+  if (XO == "O") {
+  XO = "X";
+  }
+  else {
+	XO = "O";
+  }
+ }
+ function AddTobotMid()
+ 
+ {
+  var theCell = document.getElementById("botMid");
+  
+  theCell.innerHTML = XO;
+  
+  if (XO == "O") {
+  XO = "X";
+  }
+  else {
+	XO = "O";
+  }
+ }
+ function AddTobotLeft()
+ 
+ {
+  var theCell = document.getElementById("botRight");
+  
+  theCell.innerHTML = XO;
+  
+  if (XO == "O") {
+  XO = "X";
+  }
+  else {
+	XO = "O";
+  }
+ }
+ 
+ </script>
+ 
+ </body>
+ 
+ </html>
